@@ -40,8 +40,11 @@ Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim
 
 ---
 ## Screenshots
-- Problema XXX
-<img width="734" alt="" src="">
+- Problema 621
+<img width="734" alt="621" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/621.png?raw=true">
+
+- Problema 621
+<img width="734" alt="1235" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1235.png?raw=true">
 
 ## Instalação 
 
