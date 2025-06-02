@@ -20,14 +20,18 @@ Para desenvolver o conteúdo abordado no tópico de Algoritmos Ambiciosos, a dup
 
   Greedy + Heap (ou Contagem e Matemática): Conta as tarefas mais frequentes e distribui os intervalos de forma otimizada. A ideia é preencher os espaços de forma eficiente com outras tarefas ou intervalos vazios.
 
-### 🔗 [1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/description/)
- Resumo: Dado diferentes tipos de caixas, cada tipo com uma quantidade de caixas e unidades por caixa, e uma capacidade máxima do caminhão, retorne o número máximo de unidades que o caminhão pode carregar.
+### 🔗 [1928. Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)
+**Resumo:** Dado um grafo onde cada aresta tem um tempo de travessia e cada nó possui um custo (pedágio), o objetivo é sair do nó `0` e chegar ao nó `n - 1` com o menor custo total possível, respeitando um tempo máximo (`maxTime`) para completar a jornada.
 
-- Nível de dificuldade: Fácil.
+- **Nível de dificuldade:** Difícil.
 
 ### 🧠 Algoritmo utilizado:
 
-Greedy (ganancioso por densidade de unidades): Ordena os tipos de caixas pela maior quantidade de unidades por caixa e seleciona os tipos mais valiosos primeiro até preencher a capacidade do caminhão.
+**A\*** (Busca informada com prioridade por menor custo):  
+A solução utiliza uma variação do algoritmo A\*, com prioridade baseada no menor custo total de pedágio. Embora não seja usada uma heurística adicional, a estrutura do A\* se mantém, funcionando na prática como uma versão do algoritmo de Dijkstra com restrição de tempo.
+
+A abordagem mantém um registro do menor custo para se chegar a cada nó em cada tempo possível (`dp[nó][tempo]`) e evita explorar caminhos que já foram visitados com custo menor. Uma fila de prioridade é usada para processar os estados em ordem crescente de custo, garantindo que a primeira vez que o destino for alcançado será com o menor custo possível dentro do limite de tempo.
+
 
 ### 🔗 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
 Resumo: Dado uma lista de trabalhos com início, fim e lucro, encontre o subconjunto de trabalhos não sobrepostos que gera o lucro máximo possível.
@@ -43,7 +47,10 @@ Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim
 - Problema 621
 <img width="734" alt="621" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/621.png?raw=true">
 
-- Problema 621
+- Problema 1928
+<img width="734" alt="1928" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1928.png?raw=true">
+
+- Problema 1235
 <img width="734" alt="1235" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1235.png?raw=true">
 
 ## Instalação 
