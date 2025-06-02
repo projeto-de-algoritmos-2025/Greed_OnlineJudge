@@ -104,4 +104,4 @@ python arquivo.py
 Para aplicar os casos de teste (in e out), basta acessar o link referente ao exercício no LeetCode e inserí-los no prompt de comando, também é possível gerar novos casos de teste, desde que cumpram os requisitos do exercício em questão.
 
 ## Outros 
-A apresentação da entrega pode ser visualizada [aqui]().
+A apresentação da entrega pode ser visualizada [aqui](https://unbbr.sharepoint.com/sites/TrabalhodePA412/_layouts/15/stream.aspx?id=%2Fsites%2FTrabalhodePA412%2FDocumentos%20Compartilhados%2FGeneral%2FRecordings%2FReunião%20em%20General-20250602_195334-Gravação%20de%20Reunião%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb8558749-f4b2-4f1f-a4e4-f1476eb36489).
