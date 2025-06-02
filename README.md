@@ -42,16 +42,37 @@ Resumo: Dado uma lista de trabalhos com início, fim e lucro, encontre o subconj
 
 Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim, e para cada trabalho, decide entre incluí-lo ou não. Usa busca binária para encontrar o último trabalho compatível (sem sobreposição) e programação dinâmica para memorizar os lucros acumulados.
 
+### 🔗 [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
+**Resumo:** Dada uma matriz binária `n x n`, onde `0` representa uma célula livre e `1` uma célula bloqueada, o objetivo é encontrar o caminho mais curto (em número de passos) da célula superior esquerda `(0, 0)` até a inferior direita `(n - 1, n - 1)`, movendo-se em até 8 direções (incluindo diagonais). Caso não exista um caminho viável, retornar `-1`.
+
+- **Nível de dificuldade:** Médio.
+
+### 🧠 Algoritmo utilizado:
+
+**A\*** (Busca informada com heurística):  
+A abordagem utiliza o algoritmo A\*, que explora os caminhos em ordem de prioridade baseada no custo total estimado `f(n) = g(n) + h(n)`:
+- `g(n)` é o custo real para chegar até a célula atual (número de passos).
+- `h(n)` é a heurística estimando a distância restante até o destino.
+
+A heurística escolhida é a **distância de Chebyshev** (`max(|dx|, |dy|)`), que é admissível e apropriada para movimentação em 8 direções com custo uniforme por movimento.
+
+Além disso, é usada uma matriz `gScore[n][n]` para registrar o menor custo conhecido até cada célula, permitindo que o algoritmo revise caminhos já visitados se uma nova rota mais eficiente for encontrada — algo necessário para garantir a corretude do A\*.
+
+O algoritmo termina quando a célula de destino `(n - 1, n - 1)` for alcançada com o menor número possível de passos, ou retorna `-1` se não houver caminho.
+
 ---
 ## Screenshots
 - Problema 621
 <img width="734" alt="621" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/621.png?raw=true">
 
+- Problema 1235
+<img width="734" alt="1235" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1235.png?raw=true">
+
 - Problema 1928
 <img width="734" alt="1928" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1928.png?raw=true">
 
-- Problema 1235
-<img width="734" alt="1235" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1235.png?raw=true">
+- Problema 1091
+<img width="734" alt="1091" src="https://github.com/projeto-de-algoritmos-2025/Greed_OnlineJudge/blob/main/images/1091.png?raw=true">
 
 ## Instalação 
 
