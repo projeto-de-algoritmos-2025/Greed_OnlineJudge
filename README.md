@@ -20,6 +20,17 @@ Para desenvolver o conteúdo abordado no tópico de Algoritmos Ambiciosos, a dup
 
   Greedy + Heap (ou Contagem e Matemática): Conta as tarefas mais frequentes e distribui os intervalos de forma otimizada. A ideia é preencher os espaços de forma eficiente com outras tarefas ou intervalos vazios.
 
+
+### 🔗 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
+Resumo: Dado uma lista de trabalhos com início, fim e lucro, encontre o subconjunto de trabalhos não sobrepostos que gera o lucro máximo possível.
+
+- Nível de dificuldade: Difícil.
+
+### 🧠 Algoritmo utilizado:
+
+Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim, e para cada trabalho, decide entre incluí-lo ou não. Usa busca binária para encontrar o último trabalho compatível (sem sobreposição) e programação dinâmica para memorizar os lucros acumulados.
+
+
 ### 🔗 [1928. Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/)
 **Resumo:** Dado um grafo onde cada aresta tem um tempo de travessia e cada nó possui um custo (pedágio), o objetivo é sair do nó `0` e chegar ao nó `n - 1` com o menor custo total possível, respeitando um tempo máximo (`maxTime`) para completar a jornada.
 
@@ -32,15 +43,6 @@ A solução utiliza uma variação do algoritmo A\*, com prioridade baseada no m
 
 A abordagem mantém um registro do menor custo para se chegar a cada nó em cada tempo possível (`dp[nó][tempo]`) e evita explorar caminhos que já foram visitados com custo menor. Uma fila de prioridade é usada para processar os estados em ordem crescente de custo, garantindo que a primeira vez que o destino for alcançado será com o menor custo possível dentro do limite de tempo.
 
-
-### 🔗 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
-Resumo: Dado uma lista de trabalhos com início, fim e lucro, encontre o subconjunto de trabalhos não sobrepostos que gera o lucro máximo possível.
-
-- Nível de dificuldade: Difícil.
-
-### 🧠 Algoritmo utilizado:
-
-Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim, e para cada trabalho, decide entre incluí-lo ou não. Usa busca binária para encontrar o último trabalho compatível (sem sobreposição) e programação dinâmica para memorizar os lucros acumulados.
 
 ### 🔗 [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 **Resumo:** Dada uma matriz binária `n x n`, onde `0` representa uma célula livre e `1` uma célula bloqueada, o objetivo é encontrar o caminho mais curto (em número de passos) da célula superior esquerda `(0, 0)` até a inferior direita `(n - 1, n - 1)`, movendo-se em até 8 direções (incluindo diagonais). Caso não exista um caminho viável, retornar `-1`.
