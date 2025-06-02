@@ -10,13 +10,33 @@
 | 20/0073184 |  Mateus Fidelis Marinho Maia |
 
 ## Sobre 
-Para desenvolver o conteúdo abordado no tópico de Algoritmos Ambiciosos, a dupla selecionou três exercícios em um juiz online - o LeetCode -, sendo eles, dois de nível difícil e um de nível médio. Para obter mais informações sobre os enunciados propostos, basta clicar no link que aparece no título de cada um.
+Para desenvolver o conteúdo abordado no tópico de Algoritmos Ambiciosos, a dupla selecionou alguns exercícios em um juiz online - o LeetCode -, sendo eles, dois de nível difícil, um de nível médio e um de nível fácil. Para obter mais informações sobre os enunciados propostos, basta clicar no link que aparece no título de cada um.
 
-### 🔗 []()
- Resumo:
+### 🔗 [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
+ Resumo: Dado um array de tarefas com possíveis repetições e um tempo de espera n, calcule o tempo mínimo necessário para executar todas as tarefas com pelo menos n unidades de tempo entre duas tarefas iguais.
 - Nível de dificuldade: Médio.
 
 ### 🧠 Algoritmo utilizado:
+
+  Greedy + Heap (ou Contagem e Matemática): Conta as tarefas mais frequentes e distribui os intervalos de forma otimizada. A ideia é preencher os espaços de forma eficiente com outras tarefas ou intervalos vazios.
+
+### 🔗 [1710. Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/description/)
+ Resumo: Dado diferentes tipos de caixas, cada tipo com uma quantidade de caixas e unidades por caixa, e uma capacidade máxima do caminhão, retorne o número máximo de unidades que o caminhão pode carregar.
+
+- Nível de dificuldade: Fácil.
+
+### 🧠 Algoritmo utilizado:
+
+Greedy (ganancioso por densidade de unidades): Ordena os tipos de caixas pela maior quantidade de unidades por caixa e seleciona os tipos mais valiosos primeiro até preencher a capacidade do caminhão.
+
+### 🔗 [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
+Resumo: Dado uma lista de trabalhos com início, fim e lucro, encontre o subconjunto de trabalhos não sobrepostos que gera o lucro máximo possível.
+
+- Nível de dificuldade: Difícil.
+
+### 🧠 Algoritmo utilizado:
+
+Greedy + Programação Dinâmica com Busca Binária: Ordena os trabalhos por fim, e para cada trabalho, decide entre incluí-lo ou não. Usa busca binária para encontrar o último trabalho compatível (sem sobreposição) e programação dinâmica para memorizar os lucros acumulados.
 
 ---
 ## Screenshots
